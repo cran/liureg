@@ -1,0 +1,29 @@
+exportPattern("^[[:alpha:]]+")
+
+S3method(coef, liu)
+S3method(dest, liu)
+S3method(fitted, liu)
+S3method(hatl, liu)
+S3method(infoliu, liu)
+S3method(liu, default)
+S3method(lstats, liu)
+S3method(plot, biasliu)
+S3method(plot, infoliu)
+S3method(plot, liu)
+S3method(predict, liu)
+S3method(press, liu)
+S3method(print, dliu)
+S3method(print, liu)
+S3method(print, lstats)
+S3method(print, summary.liu)
+S3method(residuals, liu)
+S3method(summary, liu)
+S3method(vcov, liu)
+
+
+importFrom("graphics", "legend", "matplot", "plot", "text")
+importFrom("stats", ".checkMFClasses", "coef", "delete.response",
+           "lm.fit", "model.frame", "model.matrix", "model.response",
+           "na.pass", "pnorm", "printCoefmat", "resid", "var", "vcov")
+
+importFrom("stats", "residuals")
