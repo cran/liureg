@@ -12,21 +12,60 @@ plot.infoliu<-function(x, abline=TRUE,...){
   mselect<-cbind(aic, bic)
 
   if(length(x$d)==1){
-    plot(x=rep(df, length(mselect)),y=mselect, main="Model Selection Criteria",
-         xlab="DF", ylab="Model Criteria", col=col, lwd=2, lty=c(1,4))
+    plot(x=rep(df, length(mselect)),
+         y=mselect,
+         main="Model Selection Criteria",
+         xlab="DF",
+         ylab="Model Criteria",
+         col=col,
+         lwd=2,
+         lty=c(1,4)
+         )
   }
   else{
-    matplot(df, mselect, main="Model Selection Criteria", xlab='DF', ylab='Model Criteria',
-            col=col, lwd=2, type='l', lty=c(1,4))
+    matplot(df,
+            mselect,
+            main="Model Selection Criteria",
+            xlab='DF',
+            ylab='Model Criteria',
+            col=col,
+            lwd=2,
+            type='l',
+            lty=c(1,4)
+            )
   }
 
-legend("topright", legend=c("AIC", "BIC"), col=col, lwd=2, fill=1:2,
-       lty=c(1,4), cex=.6, pt.cex=.7, bty="o", inset=0.01, y.intersp = .6)
+legend("topright",
+       legend=c("AIC", "BIC"),
+       col=col,
+       lwd=2,
+       bty="o",
+       bg="transparent",
+       lty=c(1,4),
+       cex=.7,
+       pt.cex=.5,
+       y.intersp = .4,
+       x.intersp=.3,
+       merge = TRUE
+       )
 
 if(abline){
-  abline(v=dfminmse, lty=2, col="blue")
-  text(dfminmse, max(mselect), paste("mse=", round(min(mse),3)), col="blue",pos=1)
-  text(dfminmse, min(mselect), paste("df=", round(as.numeric(df[which.min(mse)]), 3)), col="blue",pos=4)
+  abline(v=dfminmse,
+         lty=2,
+         col="blue"
+         )
+  text(dfminmse,
+       max(mselect),
+       paste("Minimum mse=", round(min(mse),3)),
+       col="blue",
+       pos=1
+       )
+  text(dfminmse,
+       min(mselect),
+       paste("df=", round(as.numeric(df[which.min(mse)]), 3)),
+       col="blue",
+       pos=4
+       )
 }
 
 }

@@ -6,6 +6,7 @@ summary.liu <- function(object,...) {
   n <- nrow(object$xs)
   lcoef <- object$coef
   vcov <- vcov(object)
+  ym <- mean(object$mf[,1])
 
   SE <- lapply(vcov, function(x) {
     sqrt(diag(x))
@@ -31,15 +32,18 @@ summary.liu <- function(object,...) {
     1 - x / SSTR
   })
 
-  seb0 <- 1 / n * var(y) + 1 / n * colSums(lcoef ^ 2)
-
+  #seb0 <- 1 / n * var(y) + 1 / n * colSums(lcoef ^ 2)
+  b0 <- ym - colSums((lcoef * object$xm))
+  seb0<-numeric(length(res$d))
+  pint<-numeric(length(res$d))
   for (i in seq(length(res$d))) {
-    b0 <- object$ym - colSums((lcoef * object$xm))
+        seb0[i]<-sqrt(var(y)/n+ (object$xm^2)%*%diag(vcov(object)[[i]]))
+        pint[i]<-as.numeric(b0[i]/seb0[i])
     summary <- vector("list")
     if (object$Inter) {
       summary$coefficients <-
         cbind(coefs[i,], c(b0[i], lcoef[,i]), c(seb0[i], SE[,i]),
-              c(b0[i] / seb0[i], tstats[,i]), c(NA, pvalue[,i]))
+              c(pint[i], tstats[,i]), c(2*(1-pnorm(abs(pint[i]))), pvalue[,i]))
       colnames(summary$coefficients) <-
         c("Estimate", "Estimate (Sc)", "StdErr (Sc)",
           "t-val (Sc)", "Pr(>|t|)")
