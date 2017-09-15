@@ -4,7 +4,7 @@
 \alias{print.dliu}
 
 \title{Computation of Liu Biasing Parameter \eqn{d}{d}}
-\description{The \code{dest} function computes different Liu biasing parameters available in the literature, proposed by different researchers.}
+\description{The \code{dest} function computes different Liu biasing parameters available in the literature, proposed by different researchers such as given in Liu (1993), Liu (2011), and Ozkale and Kaciranlar (2007).}
 
 \usage{dest(object, \dots)
 \method{dest}{liu}(object, \dots)
@@ -32,6 +32,10 @@ This function returns the list of following estimators of Liu parameter, availab
 Akdeniz, F. and Kaciranlar, S. (1995). On the Almost Unbiased Generalized Liu Estimators and Unbiased Estimation of the Bias and MSE. \emph{Communications in Statistics-Theory and Methods}, \strong{24}, 1789--1897.
 
 Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journal of Statistical Planning and Inference}, \strong{141}, 189--196.
+
+Liu, X-Q. (2011). Improved Liu Estimator in a Linear Regression Model. \emph{Journal of Statistical Planning and Inference},141, 189--196.
+
+Ozkale, R. M. and Kaciranlar, S. (2007). A Prediction-Oriented Criterion for Choosing the Biasing Parameter in Liu Estimation. \emph{Commincations in Statistics-Theory and Methods}, \strong{36}(10): 1889--1903.
 }
 \author{Muhammad Imdadullah, Dr. Muhammad Aslam}
 

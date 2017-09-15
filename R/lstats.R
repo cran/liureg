@@ -86,7 +86,7 @@ lstats.liu <- function(object,...) {
   rownames(R2l) <-paste("d=", d, sep="")
   colnames(R2l)<-c("R2")
 
-  adjR2l<-1-(n-1)/((n-1)/(n-p))*(1-R2l)
+  adjR2l<-1-(n-1)/(n-p-1)*(1-R2l)
   rownames(adjR2l) <-paste("d=", d, sep="")
   colnames(adjR2l) <-c("adj-R2")
 

@@ -21,7 +21,7 @@ Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journ
 \seealso{Liu model fitting \code{\link{liu}}, Liu residuals \code{\link{residuals.liu}}, Liu PRESS \code{\link{press.liu}}, Testing of Liu Coefficients \code{\link{summary.liu}}, Plot of bias variance trade-off \code{\link{plot.biasliu}}}
 
 \examples{
-mod<-liu(y~.,as.data.frame(Hald), d=seq(-5,5,.1))
+mod<-liu(y~.,as.data.frame(Hald), d=seq(-5,5,.4))
 plot(mod)
 plot(mod, abline = TRUE)
 }

@@ -5,9 +5,9 @@
 \alias{print.liu}
 \alias{fitted.liu}
 \alias{liuest}
-\title{Liu Regreassion and Estimator}
+\title{Liu Regression and Estimator}
 \description{
-Fits a linear Liu regression model after scaling regressors and returns an object of class "liu" (by calling \code{liuest} function), designed to be used in plotting method, testing of Liu coefficients and for computation of different Liu related statistics. The Liu biasing parameter \eqn{d}{d} can be a scalar or a vector.
+Fits a linear Liu regression model after scaling regressors and returns an object of class "liu" (by calling \code{liuest} function), designed to be used in plotting method, testing of Liu coefficients and for computation of different Liu related statistics. The Liu biasing parameter \eqn{d}{d} can be a scalar or a vector. This new biased estimator was first proposed by Liu, 1993.
 }
 \usage{liu(formula, data, d = 1, scaling=c("centered", "sc", "scaled"), \dots)
 liuest(formula, data, d=1, scaling=c("centered", "sc", "scaled"), \dots)
@@ -49,7 +49,7 @@ liuest(formula, data, d=1, scaling=c("centered", "sc", "scaled"), \dots)
 \references{
 Akdeniz, F. and Kaciranlar, S. (1995). On the Almost Unbiased Generalized Liu Estimators and Unbiased Estimation of the Bias and MSE. \emph{Communications in Statistics-Theory and Methods}, \strong{24}, 1789--1897.
 
-Imdadullah, M.  \emph{Addressing Linear Regression Models with Correlated Regressors: Some Package Development in R}, Unpublished Ph.D thesis, Department of Statistics, Bahauddin Zakriya University, Multan, Pakistan.
+Imdadullah, M. (2017)  \emph{Addressing Linear Regression Models with Correlated Regressors: Some Package Development in R} (PhD Thesis). Department of Statistics, Bahauddin Zakariya University, Multan, Pakistan.
 
 Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journal of Statistical Planning and Inference}, \strong{141}, 189--196.
 }

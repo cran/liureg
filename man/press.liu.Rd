@@ -5,7 +5,7 @@
 \title{Predicted Residual Sum of Squares}
 
 \description{
-The \code{press.liu} function computes predicted residual sum of squares (PRESS).}
+The \code{press.liu} function computes predicted residual sum of squares (PRESS), computed from by following Ozkale and Kaciranlar, 2007.}
 
 \usage{press(object, predr = FALSE, \dots)
 \method{press}{liu}(object, predr = FALSE, \dots)
@@ -33,6 +33,8 @@ Allen, D. M. (1974). The Relationship between Variable Selection and Data Augmen
 Akdeniz, F. and Kaciranlar, S. (1995). On the Almost Unbiased Generalized Liu Estimators and Unbiased Estimation of the Bias and MSE. \emph{Communications in Statistics-Theory and Methods}, \strong{24}, 1789--1897.
 
 Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journal of Statistical Planning and Inference}, \strong{141}, 189--196.
+
+Ozkale, R. M. and Kaciranlar, S. (2007). A Prediction-Oriented Criterion for Choosing the Biasing Parameter in Liu Estimation. \emph{Commincations in Statistics-Theory and Methods}, \strong{36}(10): 1889--1903.
 }
 
 \author{Muhammad Imdadullah, Dr. Muhammad Aslam}

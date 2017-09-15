@@ -55,7 +55,7 @@ plot.liu <- function(x, abline=TRUE,...) {
 #    abline(h = 0, lty = 2)
     abline(v = x$d[which.min(lstats(x)$mse)],
            lty = 2,
-           col = "red"
+           col = "blue"
            )
     #  text(K[which.min(rstats1(x)$mse)], min(coefs), paste("K=", K[which.min(rstats1(x)$mse)]), pos = 4, col = "red")
     #  text(K[which.min(rstats1(x)$mse)], max(coefs), paste("MSE=", round(min(rstats1(x)$mse), 3) ), pos=4, col="red" )
@@ -64,7 +64,7 @@ plot.liu <- function(x, abline=TRUE,...) {
          paste(c("minimum MSE =", " at d="),
          c(round(min(lstats(x)$mse), 3), x$d[which.min(lstats(x)$mse)]),collapse = '' ),
          pos=1,
-         col = "red"
+         col = "blue"
          )
   }
 }

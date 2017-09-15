@@ -5,7 +5,7 @@
 
 \title{Liu Regression Statistics}
 \description{
-The \code{lstats} function computes the Liu regression related statistics such as variance, estimated squared bias, MSE, R-squared and adjusted R-squared etc.}
+The \code{lstats} function computes the Liu regression related statistics such as variance, estimated squared bias, MSE, R-squared and adjusted R-squared etc. These statistics are computed by following Liu, 1993; Akdeniz, F. and Kaciranlar, S. (1995); Cule, E. and De Iorioa, M. (2012); Hastie, T. and Tibshirani, R. (1990); Liu (1993) and Mallows (1973).}
 
 \usage{
 lstats(object, \dots)
@@ -40,9 +40,13 @@ Cule, E. and De lorioa, M. (2012). A semi-Automated method to guide the choice o
 
 Hastie, T. and Tibshirani, R. (1990). \emph{Generalized Additive Models}. Chapman \& Hall.
 
-Imdadullah, M.  \emph{Addressing Linear Regression Models with Correlated Regressors: Some Package Development in R}, Unpublished Ph.D thesis, Department of Statistics, Bahauddin Zakriya University, Multan, Pakistan.
+Imdadullah, M. (2017)  \emph{Addressing Linear Regression Models with Correlated Regressors: Some Package Development in R} (PhD Thesis). Department of Statistics, Bahauddin Zakariya University, Multan, Pakistan.
 
-Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journal of Statistical Planning and Inference}, \strong{141}, 189--196.}
+Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journal of Statistical Planning and Inference}, \strong{141}, 189--196.
+
+Mallows, C. L. (1973). Some Comments on Cp. \emph{Technometrics}, 15: 661--675.
+
+}
 
 \author{Muhammad Imdadullah, Dr. Muhammad Aslam}
 

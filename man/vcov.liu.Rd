@@ -4,7 +4,7 @@
 
 \title{Variance-Covariance Matrix for Fitted Liu Model}
 
-\description{The \code{vcov} function computes the variance-covariance matrix for the estimates of linear Liu regression model.}
+\description{The \code{vcov} function computes the variance-covariance matrix for the estimates of linear Liu regression model (Liu, 1993).}
 
 \usage{\method{vcov}{liu}(object, \dots)}
 

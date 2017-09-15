@@ -3,7 +3,7 @@
 \alias{hatl.liu}
 
 \title{Liu Regression: Hat Matrix}
-\description{The \code{hatl} function computes hat matrix of Liu regression.}
+\description{The \code{hatl} function computes hat matrix of Liu regression (Liu, 1993).}
 
 \usage{hatl(object, \dots)
 \method{hatl}{liu}(object, \dots)

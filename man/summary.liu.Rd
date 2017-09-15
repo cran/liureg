@@ -24,7 +24,7 @@
 
 \value{
 The function \code{summary} computes and returns a list of summary statistics of the fitted linear Liu regression model for scalar or vector value biasing parameter \eqn{d}{d} given as argument in \code{liu} function.
-\item{coefficients}{a \eqn{p \times 5}{p * 5} matrix with columns for the scaled estimated, descaled estimated coefficients, scaled standard error, scaled \emph{t}-statistics, and corresponding \emph{p}-value (two-tailed). The Intercept term is computed by the relation \eqn{\hat{\beta}_{od}=\overline{y}-\sum_{j=1}^(p)\overline{X}_j \hat{\beta}_{jd}}{\hat{\beta}_{0d}=ybar-\sum_{j=1}^p(Xbar_j \hat{\beta}_{jd})}. The standard error of intercept term is computed as, \eqn{SE(\hat{\beta}_{0d})=\sqrt{Var(\overline{y}) +\overline{X}_j^2 diag[Cov(\hat{\beta}_{jd})]}}{SE(\hat{\beta}_{0d})=\sqrt{Var(ybar)+Xbar_j^2 diag[Cov(\hat{\beta}_{jd})]}}.}
+\item{coefficients}{A \eqn{p \times 5}{p * 5} matrix with columns for the scaled estimated, descaled estimated coefficients, scaled standard error, scaled \emph{t}-statistics, and corresponding \emph{p}-value (two-tailed). The Intercept term is computed by the relation \eqn{\hat{\beta}_{od}=\overline{y}-\sum_{j=1}^{p}\overline{X}_j \hat{\beta}_{jd}}{\hat{\beta}_{0d}=ybar-\sum_{j=1}^p(Xbar_j \hat{\beta}_{jd})}. The standard error of intercept term is computed as, \eqn{SE(\hat{\beta}_{0d})=\sqrt{Var(\overline{y}) +\overline{X}_j^2 diag[Cov(\hat{\beta}_{jd})]}}{SE(\hat{\beta}_{0d})=\sqrt{Var(ybar)+Xbar_j^2 diag[Cov(\hat{\beta}_{d})]}}.}
 \item{stats}{Liu related statistics of \emph{R}-squared, adjusted \emph{R}-squared, \emph{F}-statistics for testing of coefficients, AIC and BIC values for given biasing parameter \eqn{d}{d}.}
 \item{rmse1}{Minimum MSE value for given biasing parameter \eqn{d}{d}.}
 \item{rmse2}{Value of \eqn{d}{d} at which MSE is minimum.}
@@ -39,7 +39,7 @@ Halawa, A. And El-Bassiouni, M. (2000). Tests of Regression Coefficients Under R
 
 Hastie, T. and Tibshirani, R. (1990). \emph{Generalized Additive Models}. Chapman & Hall.
 
-Imdadullah, M. (2017). \emph{Addressing Linear Regression Models with Correlated Regressors: Some Package Development in R}, Submitted Ph.D. thesis, Department of Statistics, Bahauddin Zakaraiya University, Multan, Pakistan.
+Imdadullah, M. (2017)  \emph{Addressing Linear Regression Models with Correlated Regressors: Some Package Development in R} (PhD Thesis). Department of Statistics, Bahauddin Zakariya University, Multan, Pakistan.
 }
 
 \author{Muhammad Imdadullah, Dr. Muhammad Aslam}

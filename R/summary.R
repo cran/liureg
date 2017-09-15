@@ -22,15 +22,15 @@ summary.liu <- function(object,...) {
   summaries <- vector("list", length(res$d))
 
   coefs <- rbind(coef(object))
-  resid <- resid(object)
-  SSER  <- apply(resid, 2, function(x) {
-    sum(x ^ 2)
-  })
-  SSTR  <- t(y) %*% y
+#  resid <- resid(object)
+#  SSER  <- apply(resid, 2, function(x) {
+#    sum(x ^ 2)
+#  })
+#  SSTR  <- t(y) %*% y
 
-  R2l <- lapply(SSER, function(x) {
-    1 - x / SSTR
-  })
+#  R2l <- lapply(SSER, function(x) {
+#    1 - x / SSTR
+#  })
 
   #seb0 <- 1 / n * var(y) + 1 / n * colSums(lcoef ^ 2)
   b0 <- ym - colSums((lcoef * object$xm))
@@ -57,13 +57,12 @@ summary.liu <- function(object,...) {
       colnames(summary$coefficients) <-
         c("Estimate", "Estimate (Sc)", "StdErr (Sc)",
           "t-val (Sc)", "Pr(>|t|)")
-
-
     }
-    summary$stats <- cbind(R2l[i], lstats(object)$adjR2[i], lstats(object)$Fv[i],
+
+    summary$stats <- cbind(lstats(object)$R2[i], lstats(object)$adjR2[i], lstats(object)$Fv[i],
                            infoliu(object)[i,1], infoliu(object)[i,2], lstats(object)$mse[i])
     colnames(summary$stats)<-c("R2","adj-R2","F","AIC", "BIC", "MSE")
-
+rownames(summary$stats)<-paste("d=", object$d[i], sep="")
     summary$d <- object$d[i]
     summaries[[i]] <- summary
     names(summaries)[[i]] <- paste("summary", i, sep = "")
