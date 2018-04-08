@@ -2,7 +2,7 @@
 \alias{liureg}
 \alias{liureg-package}
 \title{Liu Regression and Estimator}
-\description{R package for fitting linear Liu Regression and Estimator which is proposed by Liu, 1993.}
+\description{R package for fitting linear Liu Regression and Estimator which is proposed by Liu (1993) <doi:10.1080/03610929308831027>.}
 
 \details{
 This package contains functions for fitting Liu regression models, including function for computation of different Liu related statistics (such as MSE, Var-Cov matrix, R-squared), estimation of biasing parameter from different researchers, testing of Liu coefficients, model selection criteria, residuals, predicted values and fitted values. The package also includes function for plotting of Liu coefficients and different Liu statistics for selection of optimal value of biasing parameter \eqn{d}{d}.
@@ -10,4 +10,4 @@ This package contains functions for fitting Liu regression models, including fun
 For a complete list of functions, use \code{library(help="liureg")}.
 }
 
-\author{Muahmmad Imdadullah, Dr. Muhammad Aslam}
+\author{Muahmmad Imdad Ullah, Muhammad Aslam}

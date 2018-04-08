@@ -1,6 +1,13 @@
 \name{NEWS}
 \title{News for Package 'liureg'}
-
+\section{Changes in liureg version 1.1.2 (2018-04-08)}{
+\subsection{Improvements}{
+  \itemize{
+    \item The bracket placement in the equations of Liu biasing parameter is corrected for the dest() function.
+    \item References, citation, and DOI are added where applicable.
+  }
+}
+}
 \section{Changes in liureg version 1.1.1 (2017-09-14)}{
 \subsection{Improvements}{
     \itemize{

@@ -24,30 +24,38 @@
 
 \value{
 The function \code{summary} computes and returns a list of summary statistics of the fitted linear Liu regression model for scalar or vector value biasing parameter \eqn{d}{d} given as argument in \code{liu} function.
-\item{coefficients}{A \eqn{p \times 5}{p * 5} matrix with columns for the scaled estimated, descaled estimated coefficients, scaled standard error, scaled \emph{t}-statistics, and corresponding \emph{p}-value (two-tailed). The Intercept term is computed by the relation \eqn{\hat{\beta}_{od}=\overline{y}-\sum_{j=1}^{p}\overline{X}_j \hat{\beta}_{jd}}{\hat{\beta}_{0d}=ybar-\sum_{j=1}^p(Xbar_j \hat{\beta}_{jd})}. The standard error of intercept term is computed as, \eqn{SE(\hat{\beta}_{0d})=\sqrt{Var(\overline{y}) +\overline{X}_j^2 diag[Cov(\hat{\beta}_{jd})]}}{SE(\hat{\beta}_{0d})=\sqrt{Var(ybar)+Xbar_j^2 diag[Cov(\hat{\beta}_{d})]}}.}
+\item{coefficients}{A \eqn{p \times 5}{p * 5} matrix with columns for the scaled estimated, descaled estimated coefficients, scaled standard error, scaled \emph{t}-statistics, and corresponding \emph{p}-value (two-tailed). The Intercept term is computed by the relation
+
+\eqn{\hat{\beta}_{od}=\overline{y}-\sum_{j=1}^{p}\overline{X}_j \hat{\beta}_{jd}}{\hat{\beta}_{0d}=ybar-\sum_{j=1}^p(Xbar_j \hat{\beta}_{jd})}.
+
+The standard error of intercept term is computed as,
+\eqn{SE(\hat{\beta}_{0d})=\sqrt{Var(\overline{y}) +\overline{X}_j^2 diag[Cov(\hat{\beta}_{jd})]}}{SE(\hat{\beta}_{0d})=\sqrt{Var(ybar)+Xbar_j^2 diag[Cov(\hat{\beta}_{d})]}}.
+}
 \item{stats}{Liu related statistics of \emph{R}-squared, adjusted \emph{R}-squared, \emph{F}-statistics for testing of coefficients, AIC and BIC values for given biasing parameter \eqn{d}{d}.}
 \item{rmse1}{Minimum MSE value for given biasing parameter \eqn{d}{d}.}
 \item{rmse2}{Value of \eqn{d}{d} at which MSE is minimum.}
 }
 
 \references{
-Aslam, M. (2014). Using Heteroscedasticity-Consistent Standard Errors for the Linear Regression Model with Correlated Regressors. \emph{Communication in Statistics-Simulation and Computation}, \strong{43}, 2353--2373.
+Aslam, M. (2014). Using Heteroscedasticity-Consistent Standard Errors for the Linear Regression Model with Correlated Regressors. \emph{Communication in Statistics-Simulation and Computation}, \strong{43}, 2353--2373. \url{http://doi.org/10.1080/03610918.2012.750354}.
 
-Cule, E. and De lorio, M. (2012). A semi-Automatic method to guide the choice of ridge parameter in ridge regression.  \emph{arXiv:1205.0686v1 [stat.AP]}.
+Cule, E. and De lorio, M. (2012). A semi-Automatic method to guide the choice of ridge parameter in ridge regression.  \emph{arXiv:1205.0686v1 [stat.AP]}. \url{https://arxiv.org/abs/1205.0686v1}.
 
-Halawa, A. And El-Bassiouni, M. (2000). Tests of Regression Coefficients Under Ridge Regression Models. \emph{Journal of Statistical Computation and Simulation}, \strong{65}, 341--356.
+Halawa, A. And El-Bassiouni, M. (2000). Tests of Regression Coefficients Under Ridge Regression Models. \emph{Journal of Statistical Computation and Simulation}, \strong{65}, 341--356. \url{https://www.tandfonline.com/doi/abs/10.1080/00949650008812006}.
 
 Hastie, T. and Tibshirani, R. (1990). \emph{Generalized Additive Models}. Chapman & Hall.
 
-Imdadullah, M. (2017)  \emph{Addressing Linear Regression Models with Correlated Regressors: Some Package Development in R} (PhD Thesis). Department of Statistics, Bahauddin Zakariya University, Multan, Pakistan.
+Imdad, M. U. (2017). \emph{Addressing Linear Regression Models with Correlated Regressors: Some Package Development in R} (Doctoral Thesis, Department of Statistics, Bahauddin Zakariya University, Multan, Pakistan).
+
+Imdadullah, M., Aslam, M., and Altaf, S. (2017). liureg: A comprehensive R Package for the Liu Estimation of Linear Regression Model with Collinear Regressors. \emph{The  R Journal}, \strong{9} (2), 232--247.
 }
 
-\author{Muhammad Imdadullah, Dr. Muhammad Aslam}
+\author{Muhammad Imdad Ullah, Muhammad Aslam}
 
 \seealso{The Liu model fitting \code{\link{liu}}, Liu residual \code{\link{residuals}}, Liu predicted value \code{\link{predict}}}
 
 \examples{
-mod <- liu(y~., as.data.frame(Hald), d=c(-2, -1.47218, 0, 0.5, 1) )
+mod <- liu(y~., as.data.frame(Hald), d = c(-2, -1.47218, 0, 0.5, 1) )
 summary(mod)
 ## coefficients for first biasing parameter
 summary(mod)$summaries[[1]]$coefficients

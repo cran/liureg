@@ -15,16 +15,19 @@
 \details{
 The \code{predict.liu} function predicted values, obtained by evaluating the regression function in the frame \code{newdata} which defaults to model.frame (\code{object}). If \code{newdata} is omitted the predictions are based on the data used for the fit. In that case how cases with missing values in the original fit are handled is determined by the \code{na.action} argument of that fit. If \code{na.action=na.omit} omitted cases will not appear in the predictions, whereas if \code{na.action=na.exclude} they will appear (in predictions), with value NA.}
 \value{\code{predict.liu} produces a vector of prediction or a matrix of predictions for scalar or vector values of biasing parameter \eqn{d}{d}.}
-\author{Muhammad Imdadullah, Dr. Muhammad Aslam}
+
+\author{Muhammad Imdad Ullah, Muhammad Aslam}
+
 \note{
 Variables are first looked for in \code{newdata} and then are searched for in the usual way (which will include the environment of the formula used in the fit). A warning will be given if the variables found are not of the same length as those in the \code{newdata} if it was supplied.}
 
 \seealso{Liu model fitting \code{\link{liu}}, Liu residuals \code{\link{residuals.liu}}, Liu PRESS \code{\link{press.liu}}, Testing of Liu Coefficients \code{\link{summary.liu}} }
 
 \examples{
-mod <- liu(y~.,as.data.frame(Hald), d=seq(-5, 5, .1))
+mod <- liu(y~., data = as.data.frame(Hald), d = seq(-5, 5, 0.1))
 predict(mod)
 
 predict(mod, newdata=as.data.frame(Hald[1:5, -1]))
 }
+
 \keyword{ Liu Model Prediction }

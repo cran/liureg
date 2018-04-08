@@ -7,7 +7,7 @@
 \alias{liuest}
 \title{Liu Regression and Estimator}
 \description{
-Fits a linear Liu regression model after scaling regressors and returns an object of class "liu" (by calling \code{liuest} function), designed to be used in plotting method, testing of Liu coefficients and for computation of different Liu related statistics. The Liu biasing parameter \eqn{d}{d} can be a scalar or a vector. This new biased estimator was first proposed by Liu, 1993.
+Fits a linear Liu regression model after scaling regressors and returns an object of class "liu" (by calling \code{liuest} function), designed to be used in plotting method, testing of Liu coefficients and for computation of different Liu related statistics. The Liu biasing parameter \eqn{d}{d} can be a scalar or a vector. This new biased estimator was first proposed by Liu (1993) <doi:10.1080/03610929308831027>.
 }
 \usage{liu(formula, data, d = 1, scaling=c("centered", "sc", "scaled"), \dots)
 liuest(formula, data, d=1, scaling=c("centered", "sc", "scaled"), \dots)
@@ -46,21 +46,24 @@ liuest(formula, data, d=1, scaling=c("centered", "sc", "scaled"), \dots)
 }
 
 \note{The function at the current form cannot handle missing values. The user has to take prior action with missing values before using this function.}
+
 \references{
-Akdeniz, F. and Kaciranlar, S. (1995). On the Almost Unbiased Generalized Liu Estimators and Unbiased Estimation of the Bias and MSE. \emph{Communications in Statistics-Theory and Methods}, \strong{24}, 1789--1897.
+Akdeniz, F. and Kaciranlar, S. (1995). On the Almost Unbiased Generalized Liu Estimators and Unbiased Estimation of the Bias and MSE. \emph{Communications in Statistics-Theory and Methods}, \strong{24}, 1789--1897. \url{http://doi.org/10.1080/03610929508831585}.
 
-Imdadullah, M. (2017)  \emph{Addressing Linear Regression Models with Correlated Regressors: Some Package Development in R} (PhD Thesis). Department of Statistics, Bahauddin Zakariya University, Multan, Pakistan.
+Imdad, M. U. (2017). \emph{Addressing Linear Regression Models with Correlated Regressors: Some Package Development in R} (Doctoral Thesis, Department of Statistics, Bahauddin Zakariya University, Multan, Pakistan).
 
-Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journal of Statistical Planning and Inference}, \strong{141}, 189--196.
+Imdadullah, M., Aslam, M., and Altaf, S. (2017). liureg: A comprehensive R Package for the Liu Estimation of Linear Regression Model with Collinear Regressors. \emph{The  R Journal}, \strong{9} (2), 232--247.
+
+Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journal of Statistical Planning and Inference}, \strong{141}, 189--196. \url{http://doi.org/10.1080/03610929308831027}.
 }
 
-\author{Muhammad Imdadullah, Dr. Muhammad Aslam}
+\author{Muhammad Imdad Ullah, Muhammad Aslam}
 
 \seealso{Liu model fitting \code{\link{liu}}, Liu residuals \code{\link{residuals.liu}}, Liu PRESS \code{\link{press.liu}}, Testing of Liu Coefficients \code{\link{summary.liu}} }
 
 \examples{
 data(Hald)
-mod<-liu(y~X1+X2+X3+X4, data=as.data.frame(Hald), d=seq(0, 0.1, 0.01), scaling="centered")
+mod<-liu(y~., data = as.data.frame(Hald), d = seq(0, 0.1, 0.01), scaling = "centered")
 ## Scaled Coefficients
 mod$coef
 
@@ -89,7 +92,7 @@ dest(mod)
 lstats(mod)
 
 ## list of objects from liuest function
-liuest(y~X1+X2+X3+X4, data=as.data.frame(Hald), d=seq(0, 0.1, 0.01), scaling="centered")
+liuest(y~., data = as.data.frame(Hald), d = seq(0, 0.1, 0.01), scaling = "centered")
 }
 
 \keyword{ Liu Regression }
