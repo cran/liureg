@@ -5,7 +5,7 @@
 
 \title{Liu Regression Statistics}
 \description{
-The \code{lstats} function computes the Liu regression related statistics such as variance, estimated squared bias, MSE, R-squared and adjusted R-squared etc. These statistics are computed by following Liu (1993) <doi:10.1080/03610929308831027>; Akdeniz, F. and Kaciranlar, S. (1995) <doi:10.1080/03610929508831585>; Cule, E. and De Iorioa, M. (2012); Hastie, T. and Tibshirani, R. (1990); and Mallows (1973) <doi:10.2307/1267380>.}
+The \code{lstats} function computes the Liu regression related statistics such as variance, estimated squared bias, MSE, R-squared and adjusted R-squared etc. These statistics are computed by following Liu (1993) \doi{10.1080/03610929308831027}; Akdeniz, F. and Kaciranlar, S. (1995) \doi{10.1080/03610929508831585}; Cule, E. and De Iorioa, M. (2012); Hastie, T. and Tibshirani, R. (1990); and Mallows (1973) \doi{10.2307/1267380}.}
 
 \usage{
 lstats(object, \dots)
@@ -34,19 +34,19 @@ The \code{lstats} function computes the Liu regression related statistics which 
 }
 
 \references{
-Akdeniz, F. and Kaciranlar, S. (1995). On the Almost Unbiased Generalized Liu Estimators and Unbiased Estimation of the Bias and MSE. \emph{Communications in Statistics-Theory and Methods}, \strong{24}, 1789--1897. \url{http://doi.org/10.1080/03610929508831585}.
+Akdeniz, F. and Kaciranlar, S. (1995). On the Almost Unbiased Generalized Liu Estimators and Unbiased Estimation of the Bias and MSE. \emph{Communications in Statistics-Theory and Methods}, \strong{24}, 1789--1897. \doi{10.1080/03610929508831585}.
 
 Cule, E. and De lorioa, M. (2012). A semi-Automated method to guide the choice of ridge parameter in ridge regression. \emph{arXiv:1205.0686v1[stat.AP]}. \url{https://arxiv.org/abs/1205.0686v1}.
 
-Hastie, T. and Tibshirani, R. (1990). \emph{Generalized Additive Models}. Chapman \& Hall.
+Hastie, T. and Tibshirani, R. (1990). \emph{Generalized Additive Models}. Chapman & Hall.
 
 Imdad, M. U. (2017). \emph{Addressing Linear Regression Models with Correlated Regressors: Some Package Development in R} (Doctoral Thesis, Department of Statistics, Bahauddin Zakariya University, Multan, Pakistan).
 
 Imdadullah, M., Aslam, M., and Altaf, S. (2017). liureg: A comprehensive R Package for the Liu Estimation of Linear Regression Model with Collinear Regressors. \emph{The  R Journal}, \strong{9} (2), 232--247.
 
-Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journal of Statistical Planning and Inference}, \strong{141}, 189--196. \url{http://doi.org/10.1080/03610929308831027}.
+Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journal of Statistical Planning and Inference}, \strong{141}, 189--196. \doi{10.1080/03610929308831027}.
 
-Mallows, C. L. (1973). Some Comments on Cp. \emph{Technometrics}, 15: 661--675. \url{http://doi.org/10.2307/1267380}.
+Mallows, C. L. (1973). Some Comments on Cp. \emph{Technometrics}, 15: 661--675. \doi{10.2307/1267380}.
 }
 
 \author{Muhammad Imdad Ullah, Muhammad Aslam}

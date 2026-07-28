@@ -5,7 +5,7 @@
 \title{Predicted Residual Sum of Squares}
 
 \description{
-The \code{press.liu} function computes predicted residual sum of squares (PRESS), computed from by following Ozkale and Kaciranlar (2007) <doi:10.1080/03610920601126522>.}
+The \code{press.liu} function computes predicted residual sum of squares (PRESS), computed from by following Ozkale and Kaciranlar (2007) \doi{10.1080/03610920601126522}.}
 
 \usage{press(object, predr = FALSE, \dots)
 \method{press}{liu}(object, predr = FALSE, \dots)
@@ -26,7 +26,7 @@ The \code{press.liu} produces a vector of PRESS for scalar or vector values of b
 }
 
 \references{
-Akdeniz, F. and Kaciranlar, S. (1995). On the Almost Unbiased Generalized Liu Estimators and Unbiased Estimation of the Bias and MSE. \emph{Communications in Statistics-Theory and Methods}, \strong{24}, 1789--1897. \url{http://doi.org/10.1080/03610929508831585}.
+Akdeniz, F. and Kaciranlar, S. (1995). On the Almost Unbiased Generalized Liu Estimators and Unbiased Estimation of the Bias and MSE. \emph{Communications in Statistics-Theory and Methods}, \strong{24}, 1789--1897. \doi{10.1080/03610929508831585}.
 
 Allen, D. M. (1971). Mean Square Error of Prediction as a Criterion for Selecting Variables. \emph{Technometrics}, \strong{13}, 469-475. \url{http://www.jstor.org/stable/1267161}.
 
@@ -36,9 +36,9 @@ Imdad, M. U. (2017). \emph{Addressing Linear Regression Models with Correlated R
 
 Imdadullah, M., Aslam, M., and Altaf, S. (2017). liureg: A comprehensive R Package for the Liu Estimation of Linear Regression Model with Collinear Regressors. \emph{The  R Journal}, \strong{9} (2), 232--247.
 
-Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journal of Statistical Planning and Inference}, \strong{141}, 189--196. \url{http://doi.org/10.1080/03610929308831027}.
+Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journal of Statistical Planning and Inference}, \strong{141}, 189--196. \doi{10.1080/03610929308831027}.
 
-Ozkale, R. M. and Kaciranlar, S. (2007). A Prediction-Oriented Criterion for Choosing the Biasing Parameter in Liu Estimation. \emph{Commincations in Statistics-Theory and Methods}, \strong{36}(10): 1889--1903. \url{http://doi.org/10.1080/03610920601126522}.
+Ozkale, R. M. and Kaciranlar, S. (2007). A Prediction-Oriented Criterion for Choosing the Biasing Parameter in Liu Estimation. \emph{Commincations in Statistics-Theory and Methods}, \strong{36}(10): 1889--1903. \doi{10.1080/03610920601126522}.
 }
 
 \author{Muhammad Imdad Ullah, Muhammad Aslam}

@@ -4,7 +4,7 @@
 
 \title{Variance-Covariance Matrix for Fitted Liu Model}
 
-\description{The \code{vcov} function computes the variance-covariance matrix for the estimates of linear Liu regression model Liu (1993) <doi:10.1080/03610929308831027>.}
+\description{The \code{vcov} function computes the variance-covariance matrix for the estimates of linear Liu regression model Liu (1993) \doi{10.1080/03610929308831027}.}
 
 \usage{\method{vcov}{liu}(object, \dots)}
 
@@ -17,7 +17,7 @@
 The \code{vcov} function computes variance-covariance matrix for scalar or vector value of biasing parameter \eqn{d}{d} provided as argument to \code{liu} function.}
 
 \value{
-A list of matrix of estimated covariances in the linear Liu regression model for scalar or vector biasing parameter \code{d}{d} is produced. Each list element has row and column names corresponding to the parameter names given by the \code{coef(mod)}. List items are named correspond to values of biasing parameter \eqn{d}{d}.}
+A list of matrix of estimated covariances in the linear Liu regression model for scalar or vector biasing parameter \eqn{d}{d} is produced. Each list element has row and column names corresponding to the parameter names given by the \code{coef(mod)}. List items are named correspond to values of biasing parameter \eqn{d}{d}.}
 
 \references{
 Imdad, M. U. (2017). \emph{Addressing Linear Regression Models with Correlated Regressors: Some Package Development in R} (Doctoral Thesis, Department of Statistics, Bahauddin Zakariya University, Multan, Pakistan).
@@ -40,4 +40,4 @@ mod<- liu(y~., data = as.data.frame(Hald), scaling = "centered", d = seq(-2, 2, 
 vcov(mod)
 }
 
-\keyword{ Liu Variance Covariance Matrix}
+\keyword{Liu Variance Covariance Matrix}

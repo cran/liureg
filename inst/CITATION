@@ -3,39 +3,29 @@ note <- sprintf("R package version %s", meta$Version)
 
 citHeader("Please cite both the liureg related paper and the liureg package:")
 
-citEntry(entry="Manual",
-    title = "{liureg}: Liu Regression with Liu Biasing Parameters and Statistics",
-    author = personList(as.person("M. U. Imdad"),
-                        as.person("M. Aslam")),
-    year = year,
-    note = note,
-    url = "https://CRAN.R-project.org/package=liureg",
+bibentry(
+  bibtype = "Manual",
+  title = "{liureg}: Liu Regression with Liu Biasing Parameters and Statistics",
+  author = c(person("Imdad Ullah", "Muhammad"), person("Aslam", "Muhammad")),
+  year = year,
+  note = note,
+  url = "https://CRAN.R-project.org/package=liureg",
+  textVersion = "Imdad, M. U. & Aslam, M. (2018). liureg: Liu Regression with Liu Biasing Parameters and Statistics. R Package verson 1.1.3. <https://CRAN.R-project.org/package=liureg>"
 
-
-    textVersion =
-         paste("Imdad, M. U. & Aslam, M. (2018). ",
-               "liureg: Liu Regression with Liu Biasing Parameters and Statistics. ",
-               "URL https://CRAN.R-project.org/package=liureg, ", note)
 )
+
 
 
 citHeader("To cite liureg article in publications use:")
 
-citEntry(entry = "Article",
-  title  = "liureg: A Comprehensive R Package for the Liu Estimation of Linear Regression Model with
-  Collinear Regressors",
-  author = personList(as.person("M. Imdadullah"),
-                      as.person("M. Aslam")),
-  journal= "The R Journal",
-  year         = "2017",
-  volume       = "9(2)",
-  pages         = "232-247",
-  url          = "https://journal.r-project.org/archive/2017/RJ-2017-048/index.html",
-
-  textVersion  =
-  paste("Imdadullah, M., Aslam, M., and Altaf, S., (2017). ",
-        "liureg: A Comprehensive R Package for the Liu Estimation of Linear Regression Model with
-        Collinear Regressors. ",
-        "The R Journal, ", "9(2),", "232--247",
-        "https://journal.r-project.org/archive/2017/RJ-2017-048/index.html")
+bibentry(
+  bibtype = "Article",
+  title = "liureg: A Comprehensive R Package for the Liu Estimation of Linear Regression Model with Collinear Regressors",
+  author = c(person("Imdadullah", "Muhammad"), person("Aslam", "Muhammad"), person("Altaf", "Saima")),
+  journal = "The R Journal",
+  year = "2017",
+  volume = "9(2)",
+  pages = "232-247",
+  url = "https://journal.r-project.org/articles/RJ-2017-048/index.html",
+  textVersion = "Imdad Ullah, M., Aslam, M., and Altaf, S. (2017). liureg: A Comprehensive R Package for the Liu Estimation of Linear Regression Model with Collinear Regressors. The R Journal, 9(2), Pages 232-247, <https://journal.r-project.org/articles/RJ-2017-048/>."
 )

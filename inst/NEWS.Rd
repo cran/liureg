@@ -1,5 +1,17 @@
 \name{NEWS}
 \title{News for Package 'liureg'}
+
+\section{Changes in liureg version 1.1.3 (2026-07-27)}{
+\subsection{Improvements}{
+  \itemize{
+    \item {Citation} New Citation Style is update.
+\item {Fixing of Escaped LaTeX specials'} All the 'Escaped LaTeX specials' are fixed in the Rd files.
+\item {Invalid URL/DOI} Invalid URL from \code{CITATION} and .Rd files is fixed.
+  }
+}
+}
+
+
 \section{Changes in liureg version 1.1.2 (2018-04-08)}{
 \subsection{Improvements}{
   \itemize{
@@ -8,6 +20,7 @@
   }
 }
 }
+
 \section{Changes in liureg version 1.1.1 (2017-09-14)}{
 \subsection{Improvements}{
     \itemize{

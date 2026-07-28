@@ -16,7 +16,7 @@ Plot of the Liu AIC and BIC against the Liu degree of freedom (sum of diagonal e
 }
 \value{Nothing returned}
 \references{
-Akaike, H. (1974). A new look at the Statistical Model Identification. \emph{IEEE Transaction on Automatic Control}, \strong{9}(6), 716--723. \url{https://doi.org/10.1109/TAC.1974.1100705}.
+Akaike, H. (1974). A new look at the Statistical Model Identification. \emph{IEEE Transaction on Automatic Control}, \strong{9}(6), 716--723. \doi{10.1109/TAC.1974.1100705}.
 
 Imdad, M. U. (2017). \emph{Addressing Linear Regression Models with Correlated Regressors: Some Package Development in R} (Doctoral Thesis, Department of Statistics, Bahauddin Zakariya University, Multan, Pakistan).
 

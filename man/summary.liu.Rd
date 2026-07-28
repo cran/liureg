@@ -37,11 +37,11 @@ The standard error of intercept term is computed as,
 }
 
 \references{
-Aslam, M. (2014). Using Heteroscedasticity-Consistent Standard Errors for the Linear Regression Model with Correlated Regressors. \emph{Communication in Statistics-Simulation and Computation}, \strong{43}, 2353--2373. \url{http://doi.org/10.1080/03610918.2012.750354}.
+Aslam, M. (2014). Using Heteroscedasticity-Consistent Standard Errors for the Linear Regression Model with Correlated Regressors. \emph{Communication in Statistics-Simulation and Computation}, \strong{43}, 2353--2373. \doi{10.1080/03610918.2012.750354}.
 
 Cule, E. and De lorio, M. (2012). A semi-Automatic method to guide the choice of ridge parameter in ridge regression.  \emph{arXiv:1205.0686v1 [stat.AP]}. \url{https://arxiv.org/abs/1205.0686v1}.
 
-Halawa, A. And El-Bassiouni, M. (2000). Tests of Regression Coefficients Under Ridge Regression Models. \emph{Journal of Statistical Computation and Simulation}, \strong{65}, 341--356. \url{https://www.tandfonline.com/doi/abs/10.1080/00949650008812006}.
+Halawa, A. And El-Bassiouni, M. (2000). Tests of Regression Coefficients Under Ridge Regression Models. \emph{Journal of Statistical Computation and Simulation}, \strong{65}, 341--356. \doi{10.1080/00949650008812006}.
 
 Hastie, T. and Tibshirani, R. (1990). \emph{Generalized Additive Models}. Chapman & Hall.
 

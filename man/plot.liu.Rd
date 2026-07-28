@@ -18,7 +18,7 @@ Imdad, M. U. (2017). \emph{Addressing Linear Regression Models with Correlated R
 
 Imdadullah, M., Aslam, M., and Altaf, S. (2017). liureg: A comprehensive R Package for the Liu Estimation of Linear Regression Model with Collinear Regressors. \emph{The  R Journal}, \strong{9} (2), 232--247.
 
-Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journal of Statistical Planning and Inference}, \strong{141}, 189--196. \url{http://doi.org/10.1080/03610929308831027}.
+Liu, K. (1993). A new Class of Biased Estimate in Linear Regression. \emph{Journal of Statistical Planning and Inference}, \strong{141}, 189--196. \doi{10.1080/03610929308831027}.
 }
 
 \author{Muhammad Imdad Ullah, Muhammad Aslam}

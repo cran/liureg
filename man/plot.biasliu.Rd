@@ -20,7 +20,7 @@ Imdad, M. U. (2017). \emph{Addressing Linear Regression Models with Correlated R
 
 Imdadullah, M., Aslam, M., and Altaf, S. (2017). liureg: A comprehensive R Package for the Liu Estimation of Linear Regression Model with Collinear Regressors. \emph{The  R Journal}, \strong{9} (2), 232--247.
 
-Kalivas, J. H., and Palmer, J. (2014). Characterizing multivariate calibration tradeoff (bias, variance, selectivity, and sensitivity) to select model tuning parameters. \emph{Journal of Chemometrics}, \strong{28}(5), 347--357. \url{https://doi.org/10.1002/cem.2555}.
+Kalivas, J. H., and Palmer, J. (2014). Characterizing multivariate calibration tradeoff (bias, variance, selectivity, and sensitivity) to select model tuning parameters. \emph{Journal of Chemometrics}, \strong{28}(5), 347--357. \doi{10.1002/cem.2555}.
 }
 
 \seealso{Liu model fitting \code{\link{liu}}, Liu residuals \code{\link{residuals.liu}}, Liu PRESS \code{\link{press.liu}}, Testing of Liu Coefficients \code{\link{summary.liu}} }
